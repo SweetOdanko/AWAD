@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:whgt@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+
+body {
+  width: 100%;
+  background-image: url(../Element/icecreamWhite.jpg);
+  background-repeat: repeat;
+}
+
+.container {
+  margin: 90px;
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-p1 {
+  margin: 100px;
+  padding: 50px;
+  background-color: rgb(255, 255, 255, 0.7);
+}
+
+.itemdetail {
+  border: 10px solid green;
+  border-radius: 10px;
+}
+
+.single-pro-image {
+  display: flex;
+  justify-content: center;
+}
+
+.single-pro-details {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+
+.single-pro-details h6,
+h2,
+h4,
+input,
+h1 {
+  margin: 10px;
+}
+
+.single-pro-details p {
+  font-weight: bold;
+}
+
+input {
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 20px;
+  width: 90px;
+}
+
+button {
+  border: 1px solid green;
+  border-radius: 10px;
+  background-color: rgb(46, 168, 46);
+  font-weight: bold;
+  padding: 6px;
+  margin: 4px;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: red;
+}
+
+.cup,
+.cone {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 3px solid #17c063;
+  border-radius: 20px;
+  padding: 10px;
+  flex-basis: calc(33.33% - 10px);
+  margin: 5px;
+  box-sizing: border-box;
+  visibility: visible;
+}
+.cup img {
+  width: 50%;
+  height: 70%;
+}
+
+.recommend {
+  margin: 100px;
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(255, 255, 255, 0.7);
+}
+
+h5 {
+  font-size: 16px;
+}
+.des p {
+  background-color: #cce7d0;
+  border: 1px solid blightgreen;
+  border-radius: 25px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.alert {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+
+.alert h2 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.alert p {
+  font-size: 16px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.alert button {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  border: none;
+  background-color: green;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.alert button:hover {
+  background-color: rgb(3, 202, 3);
+}
+
+.hide {
+  display: none;
+}

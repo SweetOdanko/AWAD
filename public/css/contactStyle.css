@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap");
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(../Element/icrecreamYellow.jpg);
+}
+
+.contactus {
+  font-size: 70px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.container {
+  width: 70%;
+  margin: 50px auto;
+  box-shadow: 4px 3px 20px #3535358c;
+  background: rgb(255, 255, 255, 0.7);
+  padding: 10px;
+  border-radius: 30px;
+}
+
+p2,
+li {
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+h1.contactus,
+h3.talk {
+  font-family: "Ma Shan Zheng", cursive;
+  color: black;
+}
+.contact-box {
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+  width: 43%;
+  margin: 50px auto;
+  box-shadow: 4px 3px 20px #3535358c;
+  background: rgb(255, 255, 255, 0.7);
+  border-radius: 30px;
+}
+
+.try {
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 90%;
+  max-width: 600px;
+  border-radius: 10px;
+}
+
+.try input {
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  font-size: 16;
+  box-shadow: 4px 3px 20px #3535358c;
+  border-radius: 10px;
+  border: none;
+  border-bottom: 1.5px solid #ccc;
+  margin-bottom: 16px;
+  border-radius: 0.3rem;
+  color: #615a5a;
+  font-size: 17px;
+  font-weight: 500;
+  outline: none;
+  width: 100%;
+}
+.try textarea {
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  font-size: 20;
+  box-shadow: 4px 3px 20px #3535358c;
+  font-family: Arial, Helvetica, sans-serif;
+  border-bottom: 1.5px solid #ccc;
+  margin-bottom: 16px;
+  border-radius: 0.3rem;
+  color: #615a5a;
+  font-size: 17px;
+  font-weight: 500;
+  outline: none;
+  width: 100%;
+}
+
+.Submit_Button {
+  padding: 15px;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 121, 14, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+  font-size: 20px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin-top: 10px;
+  border-radius: 20px;
+  position: relative;
+  bottom: 50%;
+  left: 50%;
+  right: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: 0.5s;
+  display: inline-block;
+  box-shadow: 3px 3px 6px #38373785;
+}
+
+.Submit_Button::after {
+  content: "\00bb";
+  opacity: 0;
+  position: absolute;
+  transition: 0.5s;
+  width: 50%;
+}
+
+.Submit_Button:hover {
+  padding-right: 50px;
+}
+
+.Submit_Button:hover::after {
+  opacity: 30;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1000px) {
+  .contact-box {
+    width: 80%;
+  }
+
+  .try textarea {
+    width: 144px;
+    height: 325px;
+  }
+}

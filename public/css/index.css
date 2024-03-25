@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: url(../Element/EuPfetx.jpg);
+    background-position: center top -75px;
+    background-size: cover;
+    width: 100%;
+  }
+  h1 {
+    color: rgb(0, 2, 2);
+    font-size: 53px;
+    line-height: 64px;
+  }
+  
+  h2 {
+    color: black;
+    font-size: 60px;
+  }
+  
+  p {
+    font-size: 18px;
+    color: gray;
+    margin: 15px 0 20px 0;
+  }
+  
+  .section-p1 {
+    padding: 40px 80px;
+  }
+  
+  .section-m1 {
+    margin: 40px 0;
+  }
+  #hero {
+    height: 645px;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  #hero p {
+    padding-bottom: 15px;
+    font-family: cursive;
+    animation: changeColor 3s infinite;
+    font-weight: 700;
+  }
+  
+  #hero h1 {
+    color: rgb(0, 0, 0);
+    font-family: cursive;
+  }
+  
+  #hero h2 {
+    color: rgb(255, 0, 183);
+    font-family: cursive;
+  }
+  
+  #hero button {
+    border-radius: 20px;
+    background-color: rgb(255, 0, 157);
+    color: white;
+    border: 0;
+    padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 20px;
+    font-family: cursive;
+  }
+  
+  #hero button:hover {
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 3px 3px 6px #38373785;
+  }
+  #hero img {
+    position: absolute;
+    right: 30px;
+    animation: floating 2s infinite;
+  }
+  @keyframes changeColor {
+    0% {
+      color: #ffd700; /* yellow */
+    }
+    50% {
+      color: #ff69b4; /* pink */
+    }
+    100% {
+      color: #ffd700; /* yellow */
+    }
+  }
+  
+  @keyframes floating {
+    0% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0px);
+    }
+  }
+  
+  #clock {
+    position: absolute;
+    top: 100px;
+    right: 50%;
+    transform: translateX(50%);
+    font-weight: bold;
+    color: black;
+  }
+  
+  #welcome {
+    position: absolute;
+    transform: translate(255px, 30px);
+  
+    z-index: 1;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+  }
+  

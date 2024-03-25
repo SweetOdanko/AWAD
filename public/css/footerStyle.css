@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container3 {
+  max-width: 100%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 121, 14, 1) 0%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+}
+.roww ul li a {
+  font-family: "Lato", sans-serif;
+  margin-bottom: 10px;
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.roww ul li a:hover {
+  color: yellowgreen;
+  padding-left: 15px;
+}
+
+li {
+  font-family: "Lato", sans-serif;
+  margin-bottom: 10px;
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  color: yellowgreen;
+  padding-left: 15px;
+}
+
+.copyright p1 {
+  font-family: "Lato", sans-serif;
+  padding-bottom: 10px;
+  color: white;
+  text-transform: capitalize;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+.roww {
+  padding: 40px 60px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.customer-care {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.links {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.my-account {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.social {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer h1,
+.footer h2,
+.footer h3 {
+  font-size: 25px;
+  font-family: "Ma Shan Zheng", cursive;
+  color: white;
+}
+
+.Social_links a {
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  color: black;
+  background-color: aliceblue;
+  text-decoration: none;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.Social_links a:hover {
+  color: yellowgreen;
+  padding-left: 15px;
+}
+
+@media (max-width: 800px) {
+  .customer-care {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+
+  .links {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+
+  .my-account {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+
+  .social {
+    width: 50%;
+    margin-bottom: 40px;
+  }
+}

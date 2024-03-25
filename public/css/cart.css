@@ -1,0 +1,164 @@
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(../Element/icrecreamYellow.jpg);
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+  }
+  .card {
+    width: 500px;
+    height: 700px;
+    margin: 20px auto;
+    box-shadow: 4px 3px 20px #3535358c;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 24px;
+    background-color: #fff;
+  }
+  
+  .top_card {
+    width: 400px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1.5px solid #ccc;
+  }
+  
+  .middle_card {
+    height: 500px;
+    width: 400px;
+    border-bottom: 1.5px solid #ccc;
+    overflow-y: scroll;
+  }
+  
+  .middle_card::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .bottom_card {
+    padding: 20px;
+    height: 110px;
+    width: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .login_bttn {
+    background: rgb(238, 174, 202);
+    background: radial-gradient(
+      circle,
+      rgba(238, 174, 202, 1) 0%,
+      rgba(148, 187, 233, 1) 100%
+    );
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    width: 400px;
+    cursor: pointer;
+  }
+  
+  .login_bttn:hover {
+    transform: scale(1.05) translateY(-3px);
+    box-shadow: 3px 3px 6px #38373785;
+  }
+  
+  .total span {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .total .small {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .total .total_price {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .item_pic img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .item_box {
+    height: 100px;
+    width: 100%;
+    margin-top: 20px;
+    opacity: 1;
+    transition: all;
+  }
+  .item_box ul {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .item_pic {
+    height: 100%;
+    width: 100px;
+  }
+  .item_desc {
+    height: 100%;
+    width: 240px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  }
+  .item_quan_price {
+    height: 100%;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .item_quan_price .price {
+    margin-top: 30px;
+  }
+  
+  .line {
+    height: 1px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #ddd;
+  }
+  
+  .quantity {
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 12px;
+    border: 1px solid black;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+  }
+  .quantity span {
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+  }
+  .quantity span.num {
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+  }
+  

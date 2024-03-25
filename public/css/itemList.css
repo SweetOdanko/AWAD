@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:whgt@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+}
+body {
+  width: 100%;
+  background-image: url(../Element/icrecreamYellow.jpg);
+  background-repeat: repeat;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+.header h1 {
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.header p {
+  margin-top: 20px;
+  font-size: 30px;
+  font-style: italic;
+  text-align: center;
+}
+.search_category {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.search_category .search-container {
+  background-color: white;
+  display: flex;
+  border: 3px solid #17c063;
+  border-radius: 30px;
+  height: 50px;
+  width: 400px;
+}
+#searchInput {
+  padding: 5px;
+  font-size: 16px;
+  height: 100%;
+  width: 330px;
+  border-radius: 30px;
+  border: none;
+}
+#searchInput:focus {
+  outline: none;
+  border: none;
+}
+#submitButton {
+  color: black;
+  height: 100%px;
+  width: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+#showAll {
+  display: none;
+  height: 100%;
+  width: 80px;
+  border-radius: 20px;
+}
+#categoryFilter {
+  margin-top: 10px;
+  width: 130px;
+  height: 30px;
+}
+/* //////////////////////////////////////////// */
+.header1 {
+  text-align: center;
+  padding: 10px;
+  width: 800px;
+  height: 100px;
+  background-image: url(../public/Element/icecreamPurprle.jpg);
+  margin: 20px auto;
+  border-radius: 40px;
+}
+.container {
+  padding: 5px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cup,
+.cone {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 3px solid #17c063;
+  border-radius: 20px;
+  padding: 10px;
+  flex-basis: calc(33.33% - 10px);
+  margin: 5px;
+  box-sizing: border-box;
+  visibility: visible;
+  cursor: pointer;
+}
+.cup img {
+  width: 50%;
+  height: 70%;
+}
+
+h5 {
+  font-size: 16px;
+}
+.des p {
+  background-color: #cce7d0;
+  border: 1px solid blightgreen;
+  border-radius: 25px;
+  padding: 10px;
+  margin-top: 5px;
+}
+.star {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+.header2 {
+  text-align: center;
+  padding: 10px;
+  width: 800px;
+  height: 100px;
+  background-image: url(../public/Element/icecreamPurprle.jpg);
+  margin: 20px auto;
+  border-radius: 40px;
+}
+
+.cone .des p {
+  background-color: rgb(193, 133, 228);
+  border: 1px solid blightgreen;
+}
+
+.cone {
+  border: 3px solid rgb(193, 133, 228);
+}
+.header2 h1,
+.header1 h1 {
+  margin-top: 15px;
+}
+.cup:hover {
+  background-color: rgba(23, 192, 99, 0.5);
+}
+.cone:hover {
+  background-color: rgba(193, 133, 228, 0.5);
+}

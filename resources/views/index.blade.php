@@ -24,7 +24,9 @@
             the future!
         </p>
 
-        <button id='hbttn' onclick="location.href='login.php'">Login now</button>
+        {{-- <button id='hbttn' onclick="{{ route('login') }}'">Login now</button> --}}
+        <button id='hbttn'><a href="{{ route('login') }}">Login now</a></button>
+
 
     </section>
     <script src='./resources/js/index.js'></script>

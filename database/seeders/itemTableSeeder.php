@@ -67,7 +67,7 @@ class itemTableSeeder extends Seeder
                 'flavor' => 'Combination of fruity and floral notes with a hint of vanilla. The exact flavor is difficult to pinpoint, but it is believed to be a mix of fruit flavors such as raspberry, lemon, and lime.',
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Egg yolks, Marshmallow, Food coloring',
                 'steps' => 'The blue color of the ice cream is achieved through the use of food coloring, which can vary depending on the manufacturer. Some versions of Blue Moon ice cream also include marshmallow flavoring or small pieces of marshmallow.',
-                'image_path' => 'Ice_Cream/Blue Moon',
+                'image_path' => 'Ice_Cream/Blue Moon.png',
             ],
             [
                 'title' => 'Bucky Caramal Crunch',
@@ -76,7 +76,7 @@ class itemTableSeeder extends Seeder
                 'flavor' => 'This ice cream has a sweet and creamy caramel base with swirls of crunchy toffee and caramel throughout. The toffee adds a delicious crunch to every bite, making this ice cream a satisfying treat.',
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Caramel sauce, Toffee bits',
                 'steps' => 'The Bucky Caramel Crunch ice cream starts with a custard base made from a mixture of cream, milk, sugar, and egg yolks, which is cooked and flavored with caramel sauce. Once the custard has chilled, it is mixed with crunchy caramelized pieces and swirls of rich caramel sauce to create a deliciously textured base. The mixture is then churned in an ice cream maker until it reaches a smooth and creamy consistency, and then frozen until firm for a delightful indulgence.',
-                'image_path' => 'Ice_Cream/Bucky Caramal Crunch',
+                'image_path' => 'Ice_Cream/Bucky Caramal Crunch.png',
             ],
             [
                 'title' => 'Caramel Apple',
@@ -85,7 +85,7 @@ class itemTableSeeder extends Seeder
                 'flavor' => 'The flavor of caramel apple ice cream is a perfect blend of rich caramel and tangy apple. The creamy texture of the ice cream complements the chewy bits of caramel and chunks of fresh apples, making each bite a delicious and satisfying experience.',
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Caramel sauce, Diced apples, Salt',
                 'steps' => 'The cream, milk, sugar, and egg yolks are combined to create a custard base, which is then flavored with vanilla extract and salt. Chunks of fresh apples are then mixed into the custard, and a generous drizzle of caramel sauce is swirled in for added sweetness and flavor. The mixture is then churned in an ice cream maker until it reaches a smooth and creamy consistency, and then frozen until firm.',
-                'image_path' => 'Ice_Cream/Caramel Apple',
+                'image_path' => 'Ice_Cream/Caramel Apple.png',
             ],
             [
                 'title' => 'Chocolate Chryst',
@@ -94,7 +94,7 @@ class itemTableSeeder extends Seeder
                 'flavor' => 'Chocolate Chryst ice cream has a deep chocolate flavor that is both sweet and slightly bitter, making it perfect for those who love intense chocolate flavors. The addition of chocolate chunks adds a delightful crunch to every bite.',
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Egg yolks, Dutch-processed cocoa powder, Chocolate chunks',
                 'steps' => 'For the chocolate custard base, a combination of heavy cream, whole milk, sugar, unsweetened cocoa powder, and egg yolks is heated and whisked until thickened. This mixture is then strained and cooled before being mixed with chopped chocolate and chilled. The chilled custard is then churned in an ice cream maker until it reaches a soft-serve consistency, and finally, it is folded with chocolate chunks and crunchy toffee pieces to create the irresistible chocolate crunch ice cream.',
-                'image_path' => 'Ice_Cream/Chocolate Chryst',
+                'image_path' => 'Ice_Cream/Chocolate Chryst.png',
             ],
             [
                 'title' => 'Lumberjack',
@@ -103,7 +103,7 @@ class itemTableSeeder extends Seeder
                 'flavor' => 'The flavor of lumberjack ice cream is a delicious blend of chocolate and maple. The chocolate ice cream base is infused with real maple syrup and studded with chunks of maple candies, providing a perfect balance of sweetness and richness.',
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Egg yolks, Cocoa powder, Maple syrup, Maple candies',
                 'steps' => 'Lumberjack ice cream is made with a rich blend of high-quality ingredients, including cream, milk, sugar, egg yolks, cocoa powder, maple syrup, and maple candies. These ingredients are combined to create a smooth and creamy ice cream base, which is then churned to perfection in an ice cream maker. The end result is a decadent dessert that is perfect for any occasion.',
-                'image_path' => 'Ice_Cream/Lumberjack',
+                'image_path' => 'Ice_Cream/Lumberjack.png',
             ],
             [
                 'title' => 'Mocha Macchiato',
@@ -112,7 +112,7 @@ class itemTableSeeder extends Seeder
                 'flavor' => 'This ice cream features a strong coffee flavor with a hint of chocolate that is balanced by the creaminess of the ice cream.',
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Egg yolks, Instant coffee, Unsweetened cocoa powder',
                 'steps' => 'The ingredients are cooked together to make a custard base, then the instant coffee and cocoa powder are added to create the mocha flavor. The mixture is then chilled, churned in an ice cream maker, and frozen until firm.',
-                'image_path' => 'Ice_Cream/Mocha Macchiato',
+                'image_path' => 'Ice_Cream/Mocha Macchiato.png',
             ],
             [
                 'title' => 'Orange Custard Chocolate Chip',
@@ -121,7 +121,7 @@ class itemTableSeeder extends Seeder
                 'flavor' => 'The orange custard chocolate chip ice cream has a smooth, creamy texture with a bright and refreshing orange flavor. The rich chocolate chips add a satisfying crunch and a touch of sweetness to the overall taste.',
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Fresh orange juice, Orange zest, Semisweet chocolate chips',
                 'steps' => 'The cream, milk, sugar, egg yolks, and orange zest are heated together to make a custard base, which is then flavored with vanilla extract and orange juice. The custard is chilled and then mixed with semisweet chocolate chips before being churned in an ice cream maker. The resulting ice cream is creamy, tangy, and studded with chunks of chocolate.',
-                'image_path' => 'Ice_Cream/Orange Custard Chocolate Chip',
+                'image_path' => 'Ice_Cream/Orange Custard Chocolate Chip.png',
             ],
             [
                 'title' => 'Salted Caramel Toffee',
@@ -130,7 +130,7 @@ class itemTableSeeder extends Seeder
                 'flavor' => 'Our Salted Caramel Toffee ice cream has a bold coffee flavor with a perfect balance of salty and sweet. The ribbons of salted caramel add a rich and buttery flavor, making every spoonful a delight.',
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Coffee, Salted caramel sauce',
                 'steps' => 'The cream, milk, sugar, and egg yolks are cooked together to create a custard base, which is then mixed with the coffee and chilled. The salted caramel sauce is then swirled in before the mixture is churned in an ice cream maker until it reaches a soft-serve consistency, and then frozen until firm.',
-                'image_path' => 'Ice_Cream/Salted Caramel Toffee',
+                'image_path' => 'Ice_Cream/Salted Caramel Toffee.png',
             ],
             [
                 'title' => "Toasted S'mores",
@@ -139,7 +139,7 @@ class itemTableSeeder extends Seeder
                 'flavor' => "Toasted s'mores ice cream features a blend of creamy vanilla ice cream, chunks of chocolate, and swirls of toasted marshmallow and graham cracker. The marshmallow and graham cracker swirls bring a sweet and slightly smoky flavor to the mix, while the chocolate chunks add a rich and decadent touch.",
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Toasted marshmallow swirl, Graham cracker swirl, High fructose corn syrup',
                 'steps' => "To make toasted s'mores ice cream, graham crackers, chocolate chunks, and mini marshmallows are mixed into a vanilla ice cream base made with heavy cream, whole milk, granulated sugar, egg yolks, and vanilla extract. The mixture is then churned in an ice cream maker until it reaches a soft-serve consistency, and then frozen until firm.",
-                'image_path' => "Ice_Cream/Toasted Smores",
+                'image_path' => "Ice_Cream/Toasted Smores.png",
             ],
             [
                 'title' => 'Union Utopia',
@@ -148,7 +148,7 @@ class itemTableSeeder extends Seeder
                 'flavor' => "The ice cream has a rich and creamy texture, with a subtle coconut flavor that's complemented by the sweetness of the sweet cream. It's a perfect balance of flavors that's sure to satisfy your sweet tooth.",
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Sweetened shredded coconut, Salt',
                 'steps' => 'The batter for the cake is made by mixing flour, sugar, baking powder, salt, butter, milk, eggs, and vanilla extract until smooth.',
-                'image_path' => 'Ice_Cream/Union Utopia',
+                'image_path' => 'Ice_Cream/Union Utopia.png',
             ],
             [
                 'title' => 'Wisconsin Old Fashioned',
@@ -157,7 +157,7 @@ class itemTableSeeder extends Seeder
                 'flavor' => 'The flavor of Wisconsin Old Fashioned ice cream is a combination of sweet and tangy, with prominent notes of orange, cherry, and bitters. It has a slightly boozy flavor, reminiscent of the classic Wisconsin cocktail it is named after.',
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Egg yolks, Bitters and brandy, Chopped maraschino cherries, Salt',
                 'steps' => 'The cream, milk, sugar, and egg yolks are cooked together to create a custard base. Once the custard is chilled, the orange juice, cherry juice, orange zest, bitters, and salt are added to the mixture. The ice cream is then churned in an ice cream maker until it reaches a soft-serve consistency, and then frozen until firm.',
-                'image_path' => 'Ice_Cream/Wisconsin Old Fashioned',
+                'image_path' => 'Ice_Cream/Wisconsin Old Fashioned.png',
             ],
             [
                 'title' => 'Strawberry Field',
@@ -166,7 +166,7 @@ class itemTableSeeder extends Seeder
                 'flavor' => 'The flavor of Strawberry Field ice cream is sweet and tangy, with a burst of fresh strawberry flavor in every bite.',
                 'ingredients' => 'Fresh strawberries, Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Salt',
                 'steps' => 'Fresh strawberries are pureed and combined with heavy cream, whole milk, sugar, and egg yolks, which are cooked into a custard base. The mixture is then chilled and churned in an ice cream maker until it reaches a soft-serve consistency, and finally, chunks of fresh strawberries are folded in for added texture and flavor.',
-                'image_path' => 'Ice_Cream/Strawberry Field',
+                'image_path' => 'Ice_Cream/Strawberry Field.png',
             ],
             [
                 'title' => 'Vanilla Dream',
@@ -175,7 +175,7 @@ class itemTableSeeder extends Seeder
                 'flavor' => 'The flavor of Vanilla Dream ice cream is primarily that of vanilla, with a hint of sweetness and creaminess. It is a simple yet delicious flavor that is loved by many.',
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Salt',
                 'steps' => 'The cream, milk, sugar, and egg yolks are cooked together to create a custard base, which is then flavored with vanilla extract and chilled. The chilled custard is then churned in an ice cream maker until it reaches a soft-serve consistency, and then frozen until firm. The result is a delicious and creamy vanilla ice cream that is perfect on its own or as a base for other flavors.',
-                'image_path' => 'Ice_Cream/Vanilla Dream',
+                'image_path' => 'Ice_Cream/Vanilla Dream.png',
             ],
             [
                 'title' => 'Chocolate Chunk',
@@ -184,7 +184,7 @@ class itemTableSeeder extends Seeder
                 'flavor' => "The flavor of chocolate chunk ice cream is dominated by the rich and creamy chocolate base, with the added texture and flavor of the chunks of chocolate. It's a balance of sweet and bitter flavors that are perfect for satisfying a chocolate craving.",
                 'ingredients' => 'Cocoa powder, Chocolate chunks, Chocolate chips, Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Salt',
                 'steps' => 'The cream, milk, sugar, and cocoa powder are cooked together to make a custard base. Once the custard is chilled, the chocolate chunks or chips are mixed in before the ice cream is churned in an ice cream maker.',
-                'image_path' => 'Ice_Cream/Chocolate Chunk',
+                'image_path' => 'Ice_Cream/Chocolate Chunk.png',
             ],
             [
                 'title' => 'Minty Marvel',
@@ -193,7 +193,7 @@ class itemTableSeeder extends Seeder
                 'flavor' => 'Minty Marvel has a bright and refreshing mint flavor that is balanced by the creaminess of the vanilla ice cream. The minty flavor is not overpowering, but rather complements the sweetness of the ice cream.',
                 'ingredients' => 'Peppermint extract, Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Salt',
                 'steps' => 'The cream, milk, sugar, and egg yolks are cooked together to create a custard base, which is then flavored with peppermint and vanilla extracts and chilled. The chilled custard is then mixed with a few drops of green food coloring to give it a light green color. Finally, the mixture is churned in an ice cream maker until it reaches a soft-serve consistency, and then frozen until firm.',
-                'image_path' => 'Ice_Cream/Minty Marvel',
+                'image_path' => 'Ice_Cream/Minty Marvel.png',
             ],
             [
                 'title' => 'Tropical Mango',
@@ -202,7 +202,7 @@ class itemTableSeeder extends Seeder
                 'flavor' => "The flavor of tropical mango ice cream is dominated by the sweet, juicy taste of fresh mangoes, which are complemented by a creamy and slightly tangy undertone. It has a bright and refreshing flavor that's perfect for anyone who loves the taste of tropical fruits.",
                 'ingredients' => 'Ripe mangoes, Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Salt',
                 'steps' => 'To make tropical mango ice cream, pureed fresh mango is combined with heavy cream, whole milk, granulated sugar, and a pinch of salt. The mixture is chilled and then churned in an ice cream maker until it reaches a soft-serve consistency, before being frozen until firm.',
-                'image_path' => 'Ice_Cream/Tropical Mango',
+                'image_path' => 'Ice_Cream/Tropical Mango.png',
             ],
             [
                 'title' => 'Durian Delight',
@@ -211,7 +211,7 @@ class itemTableSeeder extends Seeder
                 'flavor' => 'A creamy, rich texture with a distinct aroma and flavor of durian, a spiky tropical fruit known for its pungent smell and custardy flesh.',
                 'ingredients' => 'Durian pulp, Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Salt',
                 'steps' => 'The cream, milk, and sugar are heated together until the sugar dissolves, and then tempered with egg yolks to create a smooth custard base. The durian pulp is then blended into the custard mixture until well-combined. The mixture is chilled and then churned in an ice cream maker until it reaches a soft-serve consistency. Finally, it is frozen until firm and ready to be served.',
-                'image_path' => 'Ice_Cream/Durian Delight',
+                'image_path' => 'Ice_Cream/Durian Delight.png',
             ],
             [
                 'title' => 'Lime Burst',
@@ -220,7 +220,7 @@ class itemTableSeeder extends Seeder
                 'flavor' => "The flavor of lime burst ice cream is a delicious balance of sweet and tangy, with a strong lime taste that's sure to wake up your taste buds. It's a perfect blend of creamy vanilla ice cream and zesty lime juice.",
                 'ingredients' => 'Fresh lime juice, Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Salt',
                 'steps' => 'The heavy cream, whole milk, and sugar are combined and heated on the stove until the sugar dissolves. Lime juice and zest are added to the mixture, along with vanilla extract and a pinch of salt. The mixture is then cooled and churned in an ice cream maker until it reaches a smooth and creamy texture.',
-                'image_path' => 'Ice_Cream/Lime Burst',
+                'image_path' => 'Ice_Cream/Lime Burst.png',
             ],
             [
                 'title' => 'Berrylicious Vanilla',
@@ -229,7 +229,7 @@ class itemTableSeeder extends Seeder
                 'flavor' => "The ice cream has a rich and creamy vanilla base with a burst of mixed berry flavor. It's both refreshing and satisfying at the same time, making it the perfect treat for a hot summer day.",
                 'ingredients' => 'Mixed berries, Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Salt',
                 'steps' => 'Mix heavy cream, whole milk, sugar, and egg yolks together to create a custard base, which is then flavored with vanilla extract and mixed with fresh berries before being churned in an ice cream maker and frozen until it reaches the perfect creamy consistency.',
-                'image_path' => 'Ice_Cream/Berrylicious Vanilla',
+                'image_path' => 'Ice_Cream/Berrylicious Vanilla.png',
             ],
             [
                 'title' => 'Yamazing Delight',
@@ -238,7 +238,7 @@ class itemTableSeeder extends Seeder
                 'flavor' => 'The yam flavour of this ice cream is the star of the show, with a sweet and nutty taste that is both distinct and delicious.',
                 'ingredients' => 'Yam, Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Salt',
                 'steps' => 'The yams are peeled, cubed, and boiled until soft before being blended into a puree. The cream, milk, sugar, and egg yolks are then cooked together to create a custard base, which is flavored with the vanilla extract. The yam puree is then added to the custard base, and the mixture is churned in an ice cream maker until it reaches a soft-serve consistency. The ice cream is then frozen until firm and ready to serve.',
-                'image_path' => 'Ice_Cream/Yamazing Delight',
+                'image_path' => 'Ice_Cream/Yamazing Delight.png',
             ],
         ];
 

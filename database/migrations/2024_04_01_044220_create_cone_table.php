@@ -14,7 +14,8 @@ class CreateConeTable extends Migration
     public function up()
     {
         Schema::create('cone', function (Blueprint $table) {
-            $table->id();
+            $table->integer('id')->unsigned();
+            $table->primary('id');
             $table->string('type');
             $table->string('image_path');
             $table->string('name');

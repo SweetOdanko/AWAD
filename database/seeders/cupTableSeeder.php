@@ -16,6 +16,7 @@ class cupTableSeeder extends Seeder
     {
         $cup = [
             [
+                'id' => '1',
                 'type' => 'ice cup flavour1',
                 'image_path' => 'Ice_Cream/Alumni Park After Dark.png',
                 'name' => 'Alumni Park After Dark',
@@ -24,6 +25,7 @@ class cupTableSeeder extends Seeder
                 'price' => 'RM5'
             ],
             [
+                'id' => '2',
                 'type' => 'ice cup flavour2',
                 'image_path' => 'Ice_Cream/Angel Food Cake.png',
                 'name' => 'Angel Food Cake',
@@ -32,6 +34,7 @@ class cupTableSeeder extends Seeder
                 'price' => 'RM5'
             ],
             [
+                'id' => '3',
                 'type' => 'ice cup flavour2',
                 'image_path' => 'Ice_Cream/Batter Up.png',
                 'name' => 'Batter Up',
@@ -40,6 +43,7 @@ class cupTableSeeder extends Seeder
                 'price' => 'RM6'
             ],
             [
+                'id' => '4',
                 'type' => 'ice cup flavour3',
                 'image_path' => 'Ice_Cream/Bec-Key Lime Pie.png',
                 'name' => 'Bec-Key Lime Pie',
@@ -48,6 +52,7 @@ class cupTableSeeder extends Seeder
                 'price' => 'RM6'
             ],
             [
+                'id' => '5',
                 'type' => 'ice cup flavour3',
                 'image_path' => 'Ice_Cream/Berry Proud Parent.png',
                 'name' => 'Berry Proud Parent',
@@ -56,6 +61,7 @@ class cupTableSeeder extends Seeder
                 'price' => 'RM5'
             ],
             [
+                'id' => '6',
                 'type' => 'ice cup flavour2',
                 'image_path' => 'Ice_Cream/Blue Moon.png',
                 'name' => 'Blue Moon',
@@ -64,6 +70,7 @@ class cupTableSeeder extends Seeder
                 'price' => 'RM4'
             ],
             [
+                'id' => '7',
                 'type' => 'ice cup flavour1',
                 'image_path' => 'Ice_Cream/Bucky Caramal Crunch.png',
                 'name' => 'Bucky Caramal Crunch',
@@ -72,6 +79,7 @@ class cupTableSeeder extends Seeder
                 'price' => 'RM7'
             ],
             [
+                'id' => '8',
                 'type' => 'ice cup flavour3',
                 'image_path' => 'Ice_Cream/Caramel Apple.png',
                 'name' => 'Caramel Apple',
@@ -80,6 +88,7 @@ class cupTableSeeder extends Seeder
                 'price' => 'RM7'
             ],
             [
+                'id' => '9',
                 'type' => 'ice cup flavour1',
                 'image_path' => 'Ice_Cream/Chocolate Chryst.png',
                 'name' => 'Chocolate Chryst',
@@ -88,6 +97,7 @@ class cupTableSeeder extends Seeder
                 'price' => 'RM5'
             ],
             [
+                'id' => '10',
                 'type' => 'ice cup flavour2',
                 'image_path' => 'Ice_Cream/Lumberjack.png',
                 'name' => 'Lumberjack',
@@ -96,6 +106,7 @@ class cupTableSeeder extends Seeder
                 'price' => 'RM6'
             ],
             [
+                'id' => '11',
                 'type' => 'ice cup flavour1',
                 'image_path' => 'Ice_Cream/Mocha Macchiato.png',
                 'name' => 'Mocha Macchiato',
@@ -104,6 +115,7 @@ class cupTableSeeder extends Seeder
                 'price' => 'RM7'
             ],
             [
+                'id' => '12',
                 'type' => 'ice cup flavour1',
                 'image_path' => 'Ice_Cream/Orange Custard Chocolate Chip.png',
                 'name' => 'Orange Custard Chocolate Chip',
@@ -112,6 +124,7 @@ class cupTableSeeder extends Seeder
                 'price' => 'RM6'
             ],
             [
+                'id' => '13',
                 'type' => 'ice cup flavour1',
                 'image_path' => 'Ice_Cream/Salted Caramel Toffee.png',
                 'name' => 'Salted Caramel Toffee',
@@ -120,6 +133,7 @@ class cupTableSeeder extends Seeder
                 'price' => 'RM7'
             ],
             [
+                'id' => '14',
                 'type' => 'ice cup flavour2',
                 'image_path' => 'Ice_Cream/Toasted Smores.png',
                 'name' => 'Toasted S\'mores',
@@ -128,6 +142,7 @@ class cupTableSeeder extends Seeder
                 'price' => 'RM5'
             ],
             [
+                'id' => '15',
                 'type' => 'ice cup flavour2',
                 'image_path' => 'Ice_Cream/Union Utopia.png',
                 'name' => 'Union Utopia',
@@ -136,6 +151,7 @@ class cupTableSeeder extends Seeder
                 'price' => 'RM8'
             ],
             [
+                'id' => '16',
                 'type' => 'ice cup flavour2',
                 'image_path' => 'Ice_Cream/Wisconsin Old Fashioned.png',
                 'name' => 'Wisconsin Old Fashioned',

@@ -16,6 +16,7 @@ class coneTableSeeder extends Seeder
     {
         $cones = [
             [
+                'id' => '17',
                 'type' => 'ice cone flavour3',
                 'image_path' => 'Ice_Cream/Strawberry Field.png',
                 'name' => 'Strawberry Field',
@@ -24,6 +25,7 @@ class coneTableSeeder extends Seeder
                 'price' => 'RM5'
             ],
             [
+                'id' => '18',
                 'type' => 'ice cone flavour2',
                 'image_path' => 'Ice_Cream/Vanilla Dream.png',
                 'name' => 'Vanilla Dream',
@@ -32,6 +34,7 @@ class coneTableSeeder extends Seeder
                 'price' => 'RM5'
             ],
             [
+                'id' => '19',
                 'type' => 'ice cone flavour1',
                 'image_path' => 'Ice_Cream/Chocolate Chunk.png',
                 'name' => 'Chocolate Chunk',
@@ -40,6 +43,7 @@ class coneTableSeeder extends Seeder
                 'price' => 'RM6'
             ],
             [
+                'id' => '20',
                 'type' => 'ice cone flavour1',
                 'image_path' => 'Ice_Cream/Minty Marvel.png',
                 'name' => 'Minty Marvel',
@@ -48,6 +52,7 @@ class coneTableSeeder extends Seeder
                 'price' => 'RM6'
             ],
             [
+                'id' => '21',
                 'type' => 'ice cone flavour3',
                 'image_path' => 'Ice_Cream/Tropical Mango.png',
                 'name' => 'Tropical Mango',
@@ -56,6 +61,7 @@ class coneTableSeeder extends Seeder
                 'price' => 'RM5'
             ],
             [
+                'id' => '22',
                 'type' => 'ice cone flavour3',
                 'image_path' => 'Ice_Cream/Durian Delight.png',
                 'name' => 'Durian Delight',
@@ -64,6 +70,7 @@ class coneTableSeeder extends Seeder
                 'price' => 'RM4'
             ],
             [
+                'id' => '23',
                 'type' => 'ice cone flavour3',
                 'image_path' => 'Ice_Cream/Lime Burst.png',
                 'name' => 'Lime Burst',
@@ -72,6 +79,7 @@ class coneTableSeeder extends Seeder
                 'price' => 'RM4'
             ],
             [
+                'id' => '24',
                 'type' => 'ice cone flavour3',
                 'image_path' => 'Ice_Cream/Berrylicious Vanilla.png',
                 'name' => 'Berrylicious Vanilla',
@@ -80,6 +88,7 @@ class coneTableSeeder extends Seeder
                 'price' => 'RM4'
             ],
             [
+                'id' => '25',
                 'type' => 'ice cone flavour3',
                 'image_path' => 'Ice_Cream/Yamazing Delight.png',
                 'name' => 'Yamazing Delight',

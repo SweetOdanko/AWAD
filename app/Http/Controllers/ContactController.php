@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Support\Facades\Session;
 use Illuminate\Http\Request;
+use App\Models\Contact;
 
 class ContactController extends Controller
 {
@@ -27,6 +29,8 @@ class ContactController extends Controller
         $contact->message = $validatedData['message'];
         $contact->save();
 
-        return redirect()->back()->with('success', 'Your message has been sent!');
+        Session::flash('success', 'Your message has been sent!');
+
+        return redirect()->back();
     }
 }

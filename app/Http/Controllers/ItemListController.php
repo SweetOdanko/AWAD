@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Model\Cone;
-use App\Model\Cup;
+use App\Models\Cone;
+use App\Models\Cup;
 
 class ItemListController extends Controller
 {
@@ -12,7 +12,10 @@ class ItemListController extends Controller
     {
         $cups = Cup::all();
         $cones = Cone::all();
-        return view('itemList', compact('cups', 'cones'));
+        return view('itemList', [
+            'cups' => $cups,
+            'cones' => $cones,
+        ]);
     }
 
 }

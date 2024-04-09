@@ -23,9 +23,10 @@ Route::get('/', function () {
 });
 Route::get('/home', [HomeController::class,'home']);
 Route::get('/about', [AboutController::class,'about']);
-Route::get('/contact', [ContactController::class,'contact']);
+Route::post('/contact', [ContactController::class,'submitForm']);
 Route::post('/contact', [ContactController::class,'submit']);
 Route::view('/itemList', 'itemList');
+Route::get('/itemList',[ItemListController::class,'index']);
 Route::get('/itemDetail/{id}', [ItemDetailController::class, 'show']);
 Auth::routes();
 

@@ -51,7 +51,7 @@
             @foreach ($cups as $cup)
                 <div class='{{ $cup->type }}' onclick="location.href='/itemDetail/{{ $cup->id }}'">
                     <img src='{{ $cup->image_path }}'>
-                    <div class='des'>";
+                    <div class='des'>
                         <h5>{{ $cup->name }}</h5>
                         <p>{{ $cup->dscript }}</p>
                         <div class='star'>
@@ -78,11 +78,11 @@
 
         <div class='container'>
             @foreach ($cones as $cone)
-                <div class='{{ $cone->type }}' onclick="location.href='/itemDetail'. $cone->id)'">
+                <div class='{{ $cone->type }}' onclick="location.href='/itemDetail/{{ $cone->id }}'">
                     <img src='{{ $cone->image_path }}'>
-                    <div class='des'>";
-                        <h5>{{ $cup->name }}</h5>
-                        <p>{{ $cup->dscript }}</p>
+                    <div class='des'>
+                        <h5>{{ $cone->name }}</h5>
+                        <p>{{ $cone->dscript }}</p>
                         <div class='star'>
                             @for ($i = 0; $i < 5; $i++)
                                 @if ($i < $cone->star)
@@ -99,7 +99,7 @@
         </div>
     </section>
     @include('layout.footer')
-    <script src="./resources/js/itemList.js"></script>
+    <script src="{{ asset('js/itemList.js') }}"></script>
 </body>
 
 </html>

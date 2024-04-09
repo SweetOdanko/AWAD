@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Item extends Model
 {
+    public $table = 'item';
     protected $fillable = ['title', 'price', 'dscrpt', 'flavor', 'ingredients', 'steps', 'image_path'];
 
     public function carts()

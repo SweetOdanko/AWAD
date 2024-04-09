@@ -18,7 +18,7 @@ class CreateItemTable extends Migration
             $table->string('title');
             $table->decimal('price', 10, 2);
             $table->text('dscrpt');
-            $table->string('flavor');
+            $table->text('flavor');
             $table->text('ingredients');
             $table->text('steps');
             $table->string('image_path');

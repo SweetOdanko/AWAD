@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-<link rel="stylesheet" href="{{ asset('css/footerStyle.css') }}">
-<link rel="stylesheet" href="{{ asset('css/itemList.css') }}">
-<link rel="stylesheet" href="{{ asset('css/nav.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/footerStyle.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/itemList.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/nav.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-VhXcnoJQq62L7cqu3wpiJQbsmOoKWtTYOO7cBksmJhLpZz17vcPvMY7t27ROQwQ/" crossorigin="anonymous" />
@@ -48,26 +48,26 @@
             </p>
         </div>
         <div class='container'>
-           @foreach($cups as $cup) 
-            <div class='{{$cup->type}}' onclick="location.href='{{/itemDetail'. $cup->id)}}'";
-                <img src='{{$cup->image_path}}'>
-               <div class='des'>";
-                 <h5>{{$cup->name}}</h5>
-                  <p>{{$cup->dscript}}</p>
-                    <div class='star'>
-                    @for ($i = 0; $i < 5; $i++)
-                    @if ($i < $cup->star)
-                        <i class='fas fa-star'></i>
-                    @else
-                        <i class='fas fa-star-half-alt'></i>
-                    @endif
-                @endfor
+            @foreach ($cups as $cup)
+                <div class='{{ $cup->type }}' onclick="location.href='/itemDetail/{{ $cup->id }}'">
+                    <img src='{{ $cup->image_path }}'>
+                    <div class='des'>";
+                        <h5>{{ $cup->name }}</h5>
+                        <p>{{ $cup->dscript }}</p>
+                        <div class='star'>
+                            @for ($i = 0; $i < 5; $i++)
+                                @if ($i < $cup->star)
+                                    <i class='fas fa-star'></i>
+                                @else
+                                    <i class='fas fa-star-half-alt'></i>
+                                @endif
+                            @endfor
+                        </div>
+                        <h4>{{ $cup->price }}</h4>
+                    </div>
                 </div>
-                <h4>{{ $cup->price }}</h4>
+            @endforeach
         </div>
-    </div>
-    @endforeach
-</div>
     </section>
 
     <section id="product2" class="section-p1">
@@ -77,28 +77,28 @@
         </div>
 
         <div class='container'>
-        @foreach($cones as $cone) 
-            <div class='{{$cone->type}}' onclick="location.href='/itemDetail'. $cone->id)'";
-                <img src='{{$cone->image_path}}'>
-               <div class='des'>";
-                 <h5>{{$cup->name}}</h5>
-                  <p>{{$cup->dscript}}</p>
-                    <div class='star'>
-                    @for ($i = 0; $i < 5; $i++)
-                    @if ($i < $cone->star)
-                        <i class='fas fa-star'></i>
-                    @else
-                        <i class='fas fa-star-half-alt'></i>
-                    @endif
-                @endfor
+            @foreach ($cones as $cone)
+                <div class='{{ $cone->type }}' onclick="location.href='/itemDetail'. $cone->id)'">
+                    <img src='{{ $cone->image_path }}'>
+                    <div class='des'>";
+                        <h5>{{ $cup->name }}</h5>
+                        <p>{{ $cup->dscript }}</p>
+                        <div class='star'>
+                            @for ($i = 0; $i < 5; $i++)
+                                @if ($i < $cone->star)
+                                    <i class='fas fa-star'></i>
+                                @else
+                                    <i class='fas fa-star-half-alt'></i>
+                                @endif
+                            @endfor
+                        </div>
+                        <h4>{{ $cone->price }}</h4>
+                    </div>
                 </div>
-                <h4>{{ $cone->price }}</h4>
+            @endforeach
         </div>
-    </div>
-    @endforeach
-</div>
     </section>
-   @include('layout.footer')
+    @include('layout.footer')
     <script src="./resources/js/itemList.js"></script>
 </body>
 

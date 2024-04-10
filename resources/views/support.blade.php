@@ -16,11 +16,12 @@
                                 @csrf
                             </form>
                         </div>
-                        <div class="card-body">
-                            You must be the priviledged administrator of this site!
-                        </div>
+                    </div>
+                    <div class="card-body">
+                        Customer contact support for OutSideScoop
                     </div>
                 </div>
             </div>
         </div>
-    @endsection
+    </div>
+@endsection

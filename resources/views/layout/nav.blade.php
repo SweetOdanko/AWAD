@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="{{ asset('css/nav.css') }}">
-<link rel="stylesheet" href="{{ asset('css/index.css') }}">
 <nav>
     <section id="navbar">
         <p id="clock"></p>

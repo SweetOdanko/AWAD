@@ -6,6 +6,8 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ItemDetailController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,8 +39,15 @@ Route::get('/login/admin', [LoginController::class, 'showAdminLoginForm']);
 Route::get('/register/admin', [RegisterController::class,'showAdminRegisterForm']);
 Route::post('/login/admin', [LoginController::class,'adminLogin']);
 Route::post('/register/admin', [RegisterController::class,'createAdmin']);
+Route::get('/login/support', [LoginController::class, 'showSupportLoginForm']);
+Route::get('/register/support', [RegisterController::class,'showSupportRegisterForm']);
+Route::post('/login/support', [LoginController::class,'supportLogin']);
+Route::post('/register/support', [RegisterController::class,'createSupport']);
 Route::group(['middleware' => 'auth:admin'], function () {
     Route::view('/admin', 'admin');
+});
+Route::group(['middleware' => 'auth:support'], function() {
+    Route::view('/support', 'support');
 });
 Route::get('logout', [LoginController::class,'logout']);
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

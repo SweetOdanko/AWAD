@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Models\Admin;
+use App\Models\Support;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -41,6 +42,7 @@ class RegisterController extends Controller
     {
         $this->middleware('guest');
         $this->middleware('guest:admin');
+        $this->middleware('guest:support');
     }
 
     /**
@@ -67,10 +69,18 @@ class RegisterController extends Controller
     }
 
     /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function showSupportRegisterForm()
+    {
+        return view('auth.register', ['url' => 'support']);
+    }
+
+    /**
      * Create a new user instance after a valid registration.
      *
      * @param  array  $data
-     * @return \App\Models\User
+     * @return mixed
      */
     protected function create(array $data)
     {
@@ -95,5 +105,21 @@ class RegisterController extends Controller
             'password' => Hash::make($request->password),
         ]);
         return redirect()->intended('login/admin');
+    }
+
+    /**
+     * @param Request $request
+     *
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    protected function createSupport(Request $request)
+    {
+        $this->validator($request->all())->validate();
+        Support::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password),
+        ]);
+        return redirect()->intended('login/support');
     }
 }

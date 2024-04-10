@@ -6,8 +6,8 @@
         <a href="/"><img src='../../Element/logoi.png' class="logo" alt="" /></a>
 
         <div id="searchContainer">
-            <form method="get" action="/itemList#product1" id="search-form">
-                <input type="text" id="navsearch" name="input" placeholder="Ice cream..." />
+            <form method="get" action="{{ route('search') }}" id="search-form">
+                <input type="text" id="navsearch" name="searchInput" placeholder="Ice cream..." />
                 <button type="submit" id="navbutton">
                     <i class="fa fa-search"></i>
                 </button>

@@ -20,26 +20,30 @@
         <h1 class="title">Delicious Ice Cream Flavors</h1>
         <p class="subtitle">Explore our wide range of ice cream flavors!</p>
     </div>
+    <form action='search' method='POST'>
+        @csrf
     <div class='search_category'>
         <div class="search-container">
-            <input type="text" id="searchInput" placeholder="Search for products..." />
+            <input type="text" id="searchInput"  name="searchInput" placeholder="Search for products..." />
             <button type="submit" id="submitButton">
                 <i class=" fa fa-search"></i>
             </button>
-            <button type="button" id="showAll">
-                Show All
-            </button>
         </div>
+</form>
+<form action='filter' method='POST'>
+    @csrf
         <div class="category-container">
-            <select id="categoryFilter">
-                <option value="all">All</option>
-                <option value="flavour1">Sweet Lover</option>
-                <option value="flavour2">Classic Lover</option>
-                <option value="flavour3">Fruit Lover</option>
+            <select id="categoryFilter" name='categoryFilter'  onchange="this.form.submit()">
+            <option value="all" @if($selectedCategory == 'all') selected @endif>All</option>
+            <option value="flavour1" @if($selectedCategory == 'flavour1') selected @endif>Sweet Lover</option>
+            <option value="flavour2" @if($selectedCategory == 'flavour2') selected @endif>Classic Lover</option>
+            <option value="flavour3" @if($selectedCategory =='flavour3') selected @endif>Fruit Lover</option>
             </select>
         </div>
     </div>
+</form>
     <section id="product1" class="section-p1">
+    @if ($showHeader1)
         <div class="header1">
             <h1 class="title1">Cup Type Ice Cream</h1>
             <p class="subtitle1">
@@ -47,6 +51,7 @@
                 that's perfect for any occasion!
             </p>
         </div>
+        @endif
         <div class='container'>
             @foreach ($cups as $cup)
                 <div class='{{ $cup->type }}' onclick="location.href='/itemDetail/{{ $cup->id }}'">
@@ -71,11 +76,12 @@
     </section>
 
     <section id="product2" class="section-p1">
+    @if ($showHeader2)
         <div class="header2">
             <h1 class="title2">Cone Type Ice Cream</h1>
             <p class="subtitle2">A delicious and convenient way to enjoy a frozen treat on-the-go!</p>
         </div>
-
+        @endif
         <div class='container'>
             @foreach ($cones as $cone)
                 <div class='{{ $cone->type }}' onclick="location.href='/itemDetail/{{ $cone->id }}'">

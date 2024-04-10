@@ -27,6 +27,9 @@ Route::get('/contact', [ContactController::class,'contact']);
 Route::post('/contact', [ContactController::class,'submitForm']);
 Route::view('/itemList', 'itemList');
 Route::get('/itemList',[ItemListController::class,'index']);
+Route::get('/search', [ItemListController::class,'search'])->name('search');
+Route::post('/search', [ItemListController::class,'search']);
+Route::post('/filter', [ItemListController::class,'filter']);
 Route::get('/itemDetail/{id}', [ItemDetailController::class, 'show']);
 Auth::routes();
 

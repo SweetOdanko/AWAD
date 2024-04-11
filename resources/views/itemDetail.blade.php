@@ -10,6 +10,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Ice Cream Detail</title>
 </head>
 
@@ -17,15 +18,20 @@
     <section class='section-p1'>
         <div id='itemdetail'>
             <div class='single-pro-image'>
-                <img src= '{{ $item->image_path }}'>
+                <img src='{{ $item->image_path }}'>
             </div>
             <div class='single-pro-details'>
                 <h6>Home / Ice-Cream</h6>
                 <h1>{{ $item->title }}</h1>
                 <h2>RM {{ $item->price }}</h2>
-                <input id='quantity' type='number' value='1'>
-                <button id='addItem' onclick='showAlert()'>Add to Cart</button><br><br>
-                <div id='customAlert' class='alert hide'></div><br>
+                <form method="POST" action="{{ route('addToCart') }}">
+                    @csrf
+                    <input type="hidden" name="itemId" value="{{ $item->id }}">
+                    <input id='quantity' name="quantity" type='number' value='1'>
+                    <input type="hidden" name="itemprice" value="{{ $item->price }}">
+                    <button type="submit" data-item-id="{{ $item->id }}" data-item-price="{{ $item->price }}">Add to Cart</button><br><br>
+                </form>
+                <div class='alert hide'></div><br>
                 <h3>Product Details</h3><br>
                 <p id='detail'>Description: </p>
                 <span>{{ $item->dscrpt }}</span><br><br>
@@ -38,7 +44,6 @@
             </div>
         </div>
     </section>
-
     <h2 class="recommend">Recommendation</h2>
     <div class="container">
         <div class="ice cup flavour2" onclick="location.href='/itemDetail/2'">
@@ -95,40 +100,59 @@
         </div>
     </div>
     <script>
-        const quantityInput = document.getElementById('quantity');
-        const addItemButton = document.getElementById('addItem');
-        const message = document.getElementById('customAlert');
+  document.addEventListener('DOMContentLoaded', () => {
+    const quantityInput = document.getElementById('quantity');
+    const addItemButtons = document.querySelectorAll('button[type="submit"]');
+    const alertDiv = document.querySelector('.alert');
 
+    addItemButtons.forEach(addItemButton => {
+        addItemButton.addEventListener('click', (event) => {
+            event.preventDefault();
 
-        addItemButton.addEventListener('click', () => {
-
-            const itemId = {{ $id }};
+            const itemId = addItemButton.getAttribute('data-item-id');
+            const itemprice = addItemButton.getAttribute('data-item-price');
             const quantity = quantityInput.value;
-            const itemprice = {{ $item->price }};
 
+            const formData = new FormData();
+            formData.append('itemId', itemId);
+            formData.append('quantity', quantity);
+            formData.append('itemprice', itemprice);
 
-            const xhr = new XMLHttpRequest();
-            xhr.open('POST', './includes/add_to_cart.php');
-            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-
-                    const response = xhr.responseText;
-                    message.innerHTML =
-                        `<h2>${response}</h2><br><button onclick='hideAlert()'>OK</button>`
+            fetch('{{ url("/add-to-cart") }}', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+                },
+                body: JSON.stringify({
+                    itemId: itemId,
+                    quantity: quantity,
+                    itemprice: itemprice
+                })
+            })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to add item to cart.');
                 }
-            };
-            xhr.send(`itemId=${itemId}&quantity=${quantity}&itemprice=${itemprice}`);
+                return response.json();
+            })
+            .then(data => {
+                alertDiv.textContent = data.message;
+                alertDiv.classList.remove('hide');
+                setTimeout(() => {
+                    alertDiv.classList.add('hide');
+                }, 200); // 2 seconds
+            })
+            .catch(error => {
+                alertDiv.textContent = 'Failed to add item to cart.';
+                alertDiv.classList.remove('hide');
+                setTimeout(() => {
+                    alertDiv.classList.add('hide');
+                }, 200); // 2 seconds
+            });
         });
-
-        function showAlert() {
-            document.getElementById("customAlert").classList.remove("hide");
-        }
-
-
-        function hideAlert() {
-            document.getElementById("customAlert").classList.add("hide");
-        }
+    });
+});
     </script>
 </body>
 

@@ -8,7 +8,8 @@ use App\Http\Controllers\ContactController;
 use App\Http\Controllers\ItemDetailController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\RegisterController;
-
+use App\Http\Controllers\CartController;
+use App\Http\Controllers\CheckoutController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -51,3 +52,11 @@ Route::group(['middleware' => 'auth:support'], function() {
 });
 Route::get('logout', [LoginController::class,'logout']);
 //Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::get('/cart', [CartController::class,'showcart']);
+Route::post('/add-to-cart', [CartController::class,'addToCart'])->name('addToCart');
+Route::get('/checkout-show', [CheckoutController::class, 'showCheckout'])->name('checkout-show');
+Route::put('/cart-increment', [CartController::class, 'increment'])->name('cart.increment');
+Route::put('/cart-decrement', [CartController::class, 'decrement'])->name('cart.decrement');
+Route::delete('/cart-delete', [CartController::class, 'delete'])->name('cart.delete');
+Route::post('/checkout', [CheckoutController::class, 'checkout'])->name('checkout');

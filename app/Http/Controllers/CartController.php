@@ -27,7 +27,7 @@ class CartController extends Controller
     $userId = Auth::id();
     $itemId = $request->input('itemId');
     $quantity = $request->input('quantity');
-    $itemPrice = $request->input('itemprice') * $quantity;
+    $itemPrice = $request->input('itemprice');
 
     try {
         // Validate quantity

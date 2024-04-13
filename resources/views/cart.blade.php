@@ -37,7 +37,7 @@
                                     @method('DELETE')
                                     <input type="hidden" name="userId" value="{{ Auth::id()}}">
                                     <input type="hidden" name="Id" value="{{ $cartItem->id }}">
-                                    <button type="submit" class="delete" id="{{ $cartItem->id }}">-</button>
+                                    <button type="submit" class="delete" id="{{ $cartItem->id }}" style="width: 25px; height: 25px; border-radius: 40%; background-color: #00a424; color: white; font-size: 15px;">-</button>
                                 </form>
                             @else
                             <form method="POST" action="{{ route('cart.decrement') }}">
@@ -45,7 +45,7 @@
                                 @method('PUT')
                                 <input type="hidden" name="userId" value="{{ Auth::id()}}">
                                 <input type="hidden" name="Id" value="{{ $cartItem->id }}">
-                                <button type="submit" class="minus" id="{{ $cartItem->id }}">-</button>
+                                <button type="submit" class="minus" id="{{ $cartItem->id }}" style="width: 25px; height: 25px; border-radius: 40%;  background-color: #00a424; color: white; font-size: 15px;">-</button>
                             </form>
                             @endif
                             <span class="num">{{ $cartItem->quantity }}</span> <!-- Show quantity here -->
@@ -55,7 +55,7 @@
                                 @method('PUT')
                                 <input type="hidden" name="userId" value="{{ Auth::id()}}">
                                 <input type="hidden" name="Id" value="{{ $cartItem->id }}">
-                                <button type="submit" class="plus" id="{{ $cartItem->id }}">+</button>
+                                <button type="submit" class="plus" id="{{ $cartItem->id }}" style="width: 25px; height: 25px; border-radius: 40%;  background-color: #00a424; color: white; font-size: 15px;">+</button>
                             </form>
                         </div>
                         
@@ -69,17 +69,22 @@
         <div class='alert hide'></div><br>
         <div class="bottom_card">
             <div class="total">
-                <span style="float: left">
+                <div style="text-align: center;">
+                    <a href="{{ route('checkout-show') }}" class="login_bttn" style="background-color: #4CAF50; color: white; padding: 15px 12px; border: none; border-radius: 20px; cursor: pointer; text-align: center; text-decoration: none; display: inline-block; font-size: 20px; margin: 4px 2px; width: 250px;">Proceed</a>
+                </div>
+                <div style="clear: both;"></div>
+                <div style="float: left;">
                     <div class="small">Delivery</div>
-                    TOTAL
-                </span>
-                <span style="float: right; text-align: right">
+                    <div class="small">TOTAL</div>
+                </div>
+                <div style="float: right; text-align: right;">
                     <div class="small">RM4.95</div>
                     <div class="total_price">RM435.55</div>
-                </span>
-                <a href="{{ route('checkout-show') }}" class="login_bttn">Proceed</a>
+                </div>
+                <div style="clear: both;"></div>
             </div>
         </div>
+        
     </div>
 
     <script src="{{ asset('js/cart.js') }}"></script>

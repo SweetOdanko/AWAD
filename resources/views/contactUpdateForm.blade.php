@@ -36,25 +36,27 @@
 
         <div class="contact-box">
 
-            <form action="/contact" method="post">
+            <form action="/uMessage" method="post">
                 @csrf
                 <div class="try">
-                    <input type="text" class="Form" name="name" label="Your name" placeholder="Your Name" required>
+                    <input type="text" class="Form" name="name" label="Your name" value="{{$contact->name}}" required>
                 </div>
 
                 <div class="try">
-                    <input type="text" class="Form" name="email" label="Your email" placeholder="Your Email" required>
+                    <input type="text" class="Form" name="email" label="Your email" required
+                        value="{{$contact->email}}">
                 </div>
 
                 <div class="try">
-                    <input type="number" class="Form" name="number" label="Your phone number"
-                        placeholder="Your phone Number" required>
+                    <input type="number" class="Form" name="phnum" label="Your phone number" required
+                        value="{{$contact->phnum}}">
                 </div>
+
                 <div class="try">
-                    <textarea type="text" class="Form1" rows="3" name="message" label="Your message"
-                        placeholder="Message" required></textarea>
+                    <textarea type="text" class="Form1" rows="3" name="Message" label="Your message"
+                        required>{{$contact->Message}}</textarea>
                 </div>
-                <input type="hidden" name="user_id" value={{$id}}>
+                <input type="hidden" name="id" value={{$id}}>
                 <button type="submit" class="Submit_Button">Send message</button>
             </form>
         </div>
@@ -72,8 +74,3 @@
 
 
     @include('layout.footer')
-
-
-</body>
-
-</html>

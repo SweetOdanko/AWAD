@@ -11,9 +11,5 @@ class Cup extends Model
     public $incrementing = false;
     protected $fillable = ['type', 'image_path', 'name', 'dscript', 'star', 'price'];
 
-    public function index() {
-        $cups = Cup::all();
-        return view('itemList', ['cups'=>$cups]);
-    }
+ 
 }
-

@@ -23,6 +23,8 @@ class itemTableSeeder extends Seeder
                 'ingredients' => 'Cream, Sugar, Skim Milk, Dark Chocolate chunks, Peanut butter, Seasalt',
                 'steps' => 'The cream, sugar, and skim milk are blended together and heated until they reach a smooth consistency. Dark chocolate chunks, peanut butter, corn syrup, and sea salt are then added to the mixture and cooked until the flavors are fully infused. The resulting mixture is then chilled and processed with an ice cream maker until it reaches a soft-serve consistency.',
                 'image_path' => '../../Ice_Cream/Alumni Park After Dark.png',
+                'type'=>'cup'
+                
             ],
             [
                 'title' => 'Angel Food Cake',
@@ -32,6 +34,7 @@ class itemTableSeeder extends Seeder
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Salt',
                 'steps' => 'The cream, milk, sugar, and egg yolks are cooked together to create a custard base, which is then flavored with vanilla extract and chilled. The chilled custard is then mixed with the crumbled or diced angel food cake to create the ice cream base. Finally, the mixture is churned in an ice cream maker until it reaches a soft-serve consistency, and then frozen until firm.',
                 'image_path' => '../../Ice_Cream/Angel Food Cake.png',
+                'type'=>'cup'
             ],
             [
                 'title' => 'Batter Up',
@@ -41,6 +44,7 @@ class itemTableSeeder extends Seeder
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Salt',
                 'steps' => 'To make Batter Up ice cream, the cream, milk, sugar, egg yolks, cake mix, vanilla extract, and salt are combined and heated until the mixture thickens into a custard. Once cooled, the custard is churned in an ice cream maker until it reaches a soft-serve consistency. The batter is then added to the mixture and churned again until its fully incorporated. Finally, the ice cream is frozen until firm and ready to serve.',
                 'image_path' => '../../Ice_Cream/Batter Up.png',
+                'type'=>'cup'
             ],
             [
                 'title' => 'Bec-Key Lime Pie',
@@ -50,6 +54,7 @@ class itemTableSeeder extends Seeder
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Egg yolks, Key lime juice, Graham cracker crumbs, Unsalted butter, Salt, Lime zest',
                 'steps' => 'The cream, milk, sugar, and egg yolks are cooked together to create a custard base, which is then flavored with key lime juice and lime zest. The graham cracker crust swirl is made by mixing graham cracker crumbs with melted butter and a pinch of salt. Once the ice cream base is churned in an ice cream maker, the graham cracker crust swirl is added in layers and swirled throughout the ice cream. The mixture is then frozen until firm and ready to be enjoyed.',
                 'image_path' => '../../Ice_Cream/Bec-Key Lime Pie.png',
+                'type'=>'cup'
             ],
             [
                 'title' => 'Berry Proud Parent',
@@ -59,6 +64,7 @@ class itemTableSeeder extends Seeder
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Egg yolks, Mixed berries (strawberries, raspberries, blueberries, blackberries), Lemon juice, Salt',
                 'steps' => 'The cream, milk, sugar, and egg yolks are cooked together to create a custard base, which is then flavored with mixed berry puree and a splash of lemon juice. The mixture is chilled and then churned in an ice cream maker until it reaches a soft-serve consistency. Finally, the ice cream is frozen until firm and ready to be served.',
                 'image_path' => '../../Ice_Cream/Berry Proud Parent.png',
+                'type'=>'cup'
             ],
             [
                 'title' => 'Blue Moon',
@@ -68,6 +74,7 @@ class itemTableSeeder extends Seeder
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Egg yolks, Marshmallow, Food coloring',
                 'steps' => 'The blue color of the ice cream is achieved through the use of food coloring, which can vary depending on the manufacturer. Some versions of Blue Moon ice cream also include marshmallow flavoring or small pieces of marshmallow.',
                 'image_path' => '../../Ice_Cream/Blue Moon.png',
+                'type'=>'cup'
             ],
             [
                 'title' => 'Bucky Caramal Crunch',
@@ -77,6 +84,7 @@ class itemTableSeeder extends Seeder
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Caramel sauce, Toffee bits',
                 'steps' => 'The Bucky Caramel Crunch ice cream starts with a custard base made from a mixture of cream, milk, sugar, and egg yolks, which is cooked and flavored with caramel sauce. Once the custard has chilled, it is mixed with crunchy caramelized pieces and swirls of rich caramel sauce to create a deliciously textured base. The mixture is then churned in an ice cream maker until it reaches a smooth and creamy consistency, and then frozen until firm for a delightful indulgence.',
                 'image_path' => '../../Ice_Cream/Bucky Caramal Crunch.png',
+                'type'=>'cup'
             ],
             [
                 'title' => 'Caramel Apple',
@@ -86,6 +94,7 @@ class itemTableSeeder extends Seeder
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Caramel sauce, Diced apples, Salt',
                 'steps' => 'The cream, milk, sugar, and egg yolks are combined to create a custard base, which is then flavored with vanilla extract and salt. Chunks of fresh apples are then mixed into the custard, and a generous drizzle of caramel sauce is swirled in for added sweetness and flavor. The mixture is then churned in an ice cream maker until it reaches a smooth and creamy consistency, and then frozen until firm.',
                 'image_path' => '../../Ice_Cream/Caramel Apple.png',
+                'type'=>'cup'
             ],
             [
                 'title' => 'Chocolate Chryst',
@@ -95,6 +104,7 @@ class itemTableSeeder extends Seeder
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Egg yolks, Dutch-processed cocoa powder, Chocolate chunks',
                 'steps' => 'For the chocolate custard base, a combination of heavy cream, whole milk, sugar, unsweetened cocoa powder, and egg yolks is heated and whisked until thickened. This mixture is then strained and cooled before being mixed with chopped chocolate and chilled. The chilled custard is then churned in an ice cream maker until it reaches a soft-serve consistency, and finally, it is folded with chocolate chunks and crunchy toffee pieces to create the irresistible chocolate crunch ice cream.',
                 'image_path' => '../../Ice_Cream/Chocolate Chryst.png',
+                'type'=>'cup'
             ],
             [
                 'title' => 'Lumberjack',
@@ -104,6 +114,7 @@ class itemTableSeeder extends Seeder
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Egg yolks, Cocoa powder, Maple syrup, Maple candies',
                 'steps' => 'Lumberjack ice cream is made with a rich blend of high-quality ingredients, including cream, milk, sugar, egg yolks, cocoa powder, maple syrup, and maple candies. These ingredients are combined to create a smooth and creamy ice cream base, which is then churned to perfection in an ice cream maker. The end result is a decadent dessert that is perfect for any occasion.',
                 'image_path' => '../../Ice_Cream/Lumberjack.png',
+                'type'=>'cup'
             ],
             [
                 'title' => 'Mocha Macchiato',
@@ -113,6 +124,7 @@ class itemTableSeeder extends Seeder
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Egg yolks, Instant coffee, Unsweetened cocoa powder',
                 'steps' => 'The ingredients are cooked together to make a custard base, then the instant coffee and cocoa powder are added to create the mocha flavor. The mixture is then chilled, churned in an ice cream maker, and frozen until firm.',
                 'image_path' => '../../Ice_Cream/Mocha Macchiato.png',
+                'type'=>'cup'
             ],
             [
                 'title' => 'Orange Custard Chocolate Chip',
@@ -122,6 +134,7 @@ class itemTableSeeder extends Seeder
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Fresh orange juice, Orange zest, Semisweet chocolate chips',
                 'steps' => 'The cream, milk, sugar, egg yolks, and orange zest are heated together to make a custard base, which is then flavored with vanilla extract and orange juice. The custard is chilled and then mixed with semisweet chocolate chips before being churned in an ice cream maker. The resulting ice cream is creamy, tangy, and studded with chunks of chocolate.',
                 'image_path' => '../../Ice_Cream/Orange Custard Chocolate Chip.png',
+                'type'=>'cup'
             ],
             [
                 'title' => 'Salted Caramel Toffee',
@@ -131,6 +144,7 @@ class itemTableSeeder extends Seeder
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Coffee, Salted caramel sauce',
                 'steps' => 'The cream, milk, sugar, and egg yolks are cooked together to create a custard base, which is then mixed with the coffee and chilled. The salted caramel sauce is then swirled in before the mixture is churned in an ice cream maker until it reaches a soft-serve consistency, and then frozen until firm.',
                 'image_path' => '../../Ice_Cream/Salted Caramel Toffee.png',
+                'type'=>'cup'
             ],
             [
                 'title' => "Toasted S'mores",
@@ -140,6 +154,7 @@ class itemTableSeeder extends Seeder
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Toasted marshmallow swirl, Graham cracker swirl, High fructose corn syrup',
                 'steps' => "To make toasted s'mores ice cream, graham crackers, chocolate chunks, and mini marshmallows are mixed into a vanilla ice cream base made with heavy cream, whole milk, granulated sugar, egg yolks, and vanilla extract. The mixture is then churned in an ice cream maker until it reaches a soft-serve consistency, and then frozen until firm.",
                 'image_path' => "../../Ice_Cream/Toasted Smores.png",
+                'type'=>'cup'
             ],
             [
                 'title' => 'Union Utopia',
@@ -149,6 +164,7 @@ class itemTableSeeder extends Seeder
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Sweetened shredded coconut, Salt',
                 'steps' => 'The batter for the cake is made by mixing flour, sugar, baking powder, salt, butter, milk, eggs, and vanilla extract until smooth.',
                 'image_path' => '../../Ice_Cream/Union Utopia.png',
+                'type'=>'cup'
             ],
             [
                 'title' => 'Wisconsin Old Fashioned',
@@ -158,6 +174,7 @@ class itemTableSeeder extends Seeder
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Egg yolks, Bitters and brandy, Chopped maraschino cherries, Salt',
                 'steps' => 'The cream, milk, sugar, and egg yolks are cooked together to create a custard base. Once the custard is chilled, the orange juice, cherry juice, orange zest, bitters, and salt are added to the mixture. The ice cream is then churned in an ice cream maker until it reaches a soft-serve consistency, and then frozen until firm.',
                 'image_path' => '../../Ice_Cream/Wisconsin Old Fashioned.png',
+                'type'=>'cup'
             ],
             [
                 'title' => 'Strawberry Field',
@@ -167,6 +184,7 @@ class itemTableSeeder extends Seeder
                 'ingredients' => 'Fresh strawberries, Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Salt',
                 'steps' => 'Fresh strawberries are pureed and combined with heavy cream, whole milk, sugar, and egg yolks, which are cooked into a custard base. The mixture is then chilled and churned in an ice cream maker until it reaches a soft-serve consistency, and finally, chunks of fresh strawberries are folded in for added texture and flavor.',
                 'image_path' => '../../Ice_Cream/Strawberry Field.png',
+                'type'=>'cone'
             ],
             [
                 'title' => 'Vanilla Dream',
@@ -176,6 +194,7 @@ class itemTableSeeder extends Seeder
                 'ingredients' => 'Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Salt',
                 'steps' => 'The cream, milk, sugar, and egg yolks are cooked together to create a custard base, which is then flavored with vanilla extract and chilled. The chilled custard is then churned in an ice cream maker until it reaches a soft-serve consistency, and then frozen until firm. The result is a delicious and creamy vanilla ice cream that is perfect on its own or as a base for other flavors.',
                 'image_path' => '../../Ice_Cream/Vanilla Dream.png',
+                'type'=>'cone'
             ],
             [
                 'title' => 'Chocolate Chunk',
@@ -185,6 +204,7 @@ class itemTableSeeder extends Seeder
                 'ingredients' => 'Cocoa powder, Chocolate chunks, Chocolate chips, Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Salt',
                 'steps' => 'The cream, milk, sugar, and cocoa powder are cooked together to make a custard base. Once the custard is chilled, the chocolate chunks or chips are mixed in before the ice cream is churned in an ice cream maker.',
                 'image_path' => '../../Ice_Cream/Chocolate Chunk.png',
+                'type'=>'cone'
             ],
             [
                 'title' => 'Minty Marvel',
@@ -194,6 +214,7 @@ class itemTableSeeder extends Seeder
                 'ingredients' => 'Peppermint extract, Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Salt',
                 'steps' => 'The cream, milk, sugar, and egg yolks are cooked together to create a custard base, which is then flavored with peppermint and vanilla extracts and chilled. The chilled custard is then mixed with a few drops of green food coloring to give it a light green color. Finally, the mixture is churned in an ice cream maker until it reaches a soft-serve consistency, and then frozen until firm.',
                 'image_path' => '../../Ice_Cream/Minty Marvel.png',
+                'type'=>'cone'
             ],
             [
                 'title' => 'Tropical Mango',
@@ -203,6 +224,7 @@ class itemTableSeeder extends Seeder
                 'ingredients' => 'Ripe mangoes, Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Salt',
                 'steps' => 'To make tropical mango ice cream, pureed fresh mango is combined with heavy cream, whole milk, granulated sugar, and a pinch of salt. The mixture is chilled and then churned in an ice cream maker until it reaches a soft-serve consistency, before being frozen until firm.',
                 'image_path' => '../../Ice_Cream/Tropical Mango.png',
+                'type'=>'cone'
             ],
             [
                 'title' => 'Durian Delight',
@@ -212,6 +234,7 @@ class itemTableSeeder extends Seeder
                 'ingredients' => 'Durian pulp, Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Salt',
                 'steps' => 'The cream, milk, and sugar are heated together until the sugar dissolves, and then tempered with egg yolks to create a smooth custard base. The durian pulp is then blended into the custard mixture until well-combined. The mixture is chilled and then churned in an ice cream maker until it reaches a soft-serve consistency. Finally, it is frozen until firm and ready to be served.',
                 'image_path' => '../../Ice_Cream/Durian Delight.png',
+                'type'=>'cone'
             ],
             [
                 'title' => 'Lime Burst',
@@ -221,6 +244,7 @@ class itemTableSeeder extends Seeder
                 'ingredients' => 'Fresh lime juice, Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Salt',
                 'steps' => 'The heavy cream, whole milk, and sugar are combined and heated on the stove until the sugar dissolves. Lime juice and zest are added to the mixture, along with vanilla extract and a pinch of salt. The mixture is then cooled and churned in an ice cream maker until it reaches a smooth and creamy texture.',
                 'image_path' => '../../Ice_Cream/Lime Burst.png',
+                'type'=>'cone'
             ],
             [
                 'title' => 'Berrylicious Vanilla',
@@ -230,6 +254,7 @@ class itemTableSeeder extends Seeder
                 'ingredients' => 'Mixed berries, Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Salt',
                 'steps' => 'Mix heavy cream, whole milk, sugar, and egg yolks together to create a custard base, which is then flavored with vanilla extract and mixed with fresh berries before being churned in an ice cream maker and frozen until it reaches the perfect creamy consistency.',
                 'image_path' => '../../Ice_Cream/Berrylicious Vanilla.png',
+                'type'=>'cone'
             ],
             [
                 'title' => 'Yamazing Delight',
@@ -239,6 +264,7 @@ class itemTableSeeder extends Seeder
                 'ingredients' => 'Yam, Heavy cream, Whole milk, Granulated sugar, Egg yolks, Vanilla extract, Salt',
                 'steps' => 'The yams are peeled, cubed, and boiled until soft before being blended into a puree. The cream, milk, sugar, and egg yolks are then cooked together to create a custard base, which is flavored with the vanilla extract. The yam puree is then added to the custard base, and the mixture is churned in an ice cream maker until it reaches a soft-serve consistency. The ice cream is then frozen until firm and ready to serve.',
                 'image_path' => '../../Ice_Cream/Yamazing Delight.png',
+                'type'=>'cone'
             ],
         ];
 

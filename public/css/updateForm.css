@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.small-c {
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    /* Optional: Adjust spacing between input groups */
+}
+
+.input-group label {
+    width: 150px;
+    /* Adjust label width as needed */
+    text-align: right;
+    margin-right: 10px;
+    /* Optional: Adjust spacing between label and input */
+}
+
+.input-group textarea,
+.input-group input[type="number"],
+.input-group select {
+    width: 400px;
+    /* Adjust input width as needed */
+}
+.path {
+    width: 300px;
+}

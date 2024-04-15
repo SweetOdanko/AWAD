@@ -22,6 +22,7 @@ class CreateItemTable extends Migration
             $table->text('ingredients');
             $table->text('steps');
             $table->string('image_path');
+            $table->enum('type',['cone','cup']);
             $table->timestamps();
         });
     }

@@ -111,6 +111,23 @@ class RegisterController extends Controller
     {
         return view('auth.register');
     }
+
+    public function createAdmin(Request $request){
+        $this->validator($request->all())->validate();
+        // User::create([
+        //     'name' => $request->name,
+        //     'email' => $request->email,
+        //     'password' => Hash::make($request->password),
+        //     'role'=>'admin',
+        // ]);
+        $user=new User;
+        $user->name=$request->name;
+        $user->email= $request->email;
+        $user->password=Hash::make($request->password);
+        $user->role='admin';
+        $user->save();
+        return redirect()->intended('login');
+    }
     // /**
     //  * @param Request $request
     //  *

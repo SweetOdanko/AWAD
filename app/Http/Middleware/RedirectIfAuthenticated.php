@@ -28,9 +28,7 @@ class RedirectIfAuthenticated
             if ($guard == 'support' && Auth::guard($guard)->check()) {
                 return redirect('/support');
             }
-            if (Auth::guard($guard)->check()) {
-                return redirect('/home');
-            }
+          
         }
 
         return $next($request);

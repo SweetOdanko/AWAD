@@ -41,15 +41,15 @@ return [
             'provider' => 'users',
         ],
 
-        'admin' => [
-            'driver' => 'session',
-            'provider' => 'admins',
-        ],
+        // 'admin' => [
+        //     'driver' => 'session',
+        //     'provider' => 'admins',
+        // ],
 
-        'support' => [
-            'driver' => 'session',
-            'provider' => 'supports',
-        ]
+        // 'support' => [
+        //     'driver' => 'session',
+        //     'provider' => 'supports',
+        // ]
     ],
 
     /*

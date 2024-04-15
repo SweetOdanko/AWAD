@@ -41,8 +41,8 @@ class RegisterController extends Controller
     public function __construct()
     {
         $this->middleware('guest');
-        $this->middleware('guest:admin');
-        $this->middleware('guest:support');
+        //$this->middleware('guest:admin');
+        //$this->middleware('guest:support');
     }
 
     /**
@@ -60,66 +60,70 @@ class RegisterController extends Controller
         ]);
     }
 
-    /**
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     */
-    public function showAdminRegisterForm()
-    {
-        return view('auth.register', ['url' => 'admin']);
-    }
+    // /**
+    //  * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+    //  */
+    // public function showAdminRegisterForm()
+    // {
+    //     return view('auth.register', ['url' => 'admin']);
+    // }
 
-    /**
-     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
-     */
-    public function showSupportRegisterForm()
-    {
-        return view('auth.register', ['url' => 'support']);
-    }
+    // /**
+    //  * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+    //  */
+    // public function showSupportRegisterForm()
+    // {
+    //     return view('auth.register', ['url' => 'support']);
+    // }
 
-    /**
-     * Create a new user instance after a valid registration.
-     *
-     * @param  array  $data
-     * @return mixed
-     */
-    protected function create(array $data)
-    {
-        return User::create([
-            'name' => $data['name'],
-            'email' => $data['email'],
-            'password' => Hash::make($data['password']),
-        ]);
-    }
-
-    /**
-     * @param Request $request
-     *
-     * @return \Illuminate\Http\RedirectResponse
-     */
-    protected function createAdmin(Request $request)
-    {
-        $this->validator($request->all())->validate();
-        Admin::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'password' => Hash::make($request->password),
-        ]);
-        return redirect()->intended('login/admin');
-    }
+    // /**
+    //  * Create a new user instance after a valid registration.
+    //  *
+    //  * @param  array  $data
+    //  * @return mixed
+    //  */
+    // protected function create(array $data)
+    // {
+    //     return User::create([
+    //         'name' => $data['name'],
+    //         'email' => $data['email'],
+    //         'password' => Hash::make($data['password']),
+    //     ]);
+    // }
 
     /**
      * @param Request $request
      *
      * @return \Illuminate\Http\RedirectResponse
      */
-    protected function createSupport(Request $request)
+    protected function createUser(Request $request)
     {
         $this->validator($request->all())->validate();
-        Support::create([
+        User::create([
             'name' => $request->name,
             'email' => $request->email,
             'password' => Hash::make($request->password),
         ]);
-        return redirect()->intended('login/support');
+        return redirect()->intended('login');
     }
+
+        public function showRegisterForm()
+    {
+        return view('auth.register');
+    }
+    // /**
+    //  * @param Request $request
+    //  *
+    //  * @return \Illuminate\Http\RedirectResponse
+    //  */
+    // protected function createSupport(Request $request)
+    // {
+    //     $this->validator($request->all())->validate();
+    //     Support::create([
+    //         'name' => $request->name,
+    //         'email' => $request->email,
+    //         'password' => Hash::make($request->password),
+    //     ]);
+    //     return redirect()->intended('login/support');
+    // }
 }

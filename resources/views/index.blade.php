@@ -24,17 +24,10 @@
             the future!
         </p>
 
-        {{-- original login button --}}
-        {{-- <button id='hbttn' onclick="{{ route('login') }}'">Login now</button> --}}
+
         @if (Auth::check())
-            <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: inline;">
-                @csrf
-                <button type="submit" class="btn btn-link">Logout</button>
-            </form>
-        @else
-            <form action="{{ route('login') }}" method="GET" style="display: inline;">
-                <button type="submit" class="btn btn-primary" id="hbttn">Login now</button>
-            </form>
+        <a href="/logout">Logout </a>
+        @else <a class="btn btn-link" href="/login">Login now</a>
         @endif
 
 

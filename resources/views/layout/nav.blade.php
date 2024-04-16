@@ -24,33 +24,33 @@
                 </li>
                 <li><a class="{{ Request::path() === 'contact' ? 'active' : '' }}" href="/contact">Contact</a></li>
                 @guest
-                @if (Route::has('login'))
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                </li>
-                @endif
+                    @if (Route::has('login'))
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        </li>
+                    @endif
 
-                @if (Route::has('register'))
-                <li class="nav-item">
-                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
-                </li>
-                @endif
+                    @if (Route::has('register'))
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                        </li>
+                    @endif
                 @else
-                <li class="dropdown">
-                    <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
-                        data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                        {{ Auth::user()->name }}
-                    </a>
-
-
-                    <div class="dropdown-content" aria-labelledby="navbarDropdown">
-                        <a href="/cart"><i class="fa fa-shopping-cart"></i></a>
-                        <a class="dropdown-item" href="/logout">Logout1</a>
+                    <li class="dropdown">
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            {{ Auth::user()->name }}
                         </a>
 
 
-                    </div>
-                </li>
+                        <div class="dropdown-content" aria-labelledby="navbarDropdown">
+                            <a href="/cart"><i class="fa fa-shopping-cart"></i></a>
+                            <a class="dropdown-item" href="/logout">Logout</a>
+                            </a>
+
+
+                        </div>
+                    </li>
                 @endguest
 
             </ul>

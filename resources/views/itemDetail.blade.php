@@ -22,22 +22,27 @@
             </div>
             <div class='single-pro-details'>
                 <h6>Home / Ice-Cream</h6>
-
-                @can('delete',$item)
-                route to handle
-                <a href="/dItems/{{$item->id}}">Delete</a>
-                @endcan
-                @can('update',$item)
-                <a href="/uItem/{{$item->id}}">update</a>
-                @endcan
-                <h1>{{ $item->title }}</h1>
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div>
+                        <h1>{{ $item->title }}</h1>
+                    </div>
+                    <div>
+                        @can('update', $item)
+                            <a id="create" href="/uItem/{{ $item->id }}">Update</a>
+                        @endcan
+                        @can('delete', $item)
+                            <a id="create" href="/dItems/{{ $item->id }}">Delete</a>
+                        @endcan
+                    </div>
+                </div>
                 <h2>RM {{ $item->price }}</h2>
                 <form method="POST" action="{{ route('addToCart') }}">
                     @csrf
                     <input type="hidden" name="itemId" value="{{ $item->id }}">
                     <input id='quantity' name="quantity" type='number' value='1'>
                     <input type="hidden" name="itemprice" value="{{ $item->price }}">
-                    <button type="submit" data-item-id="{{ $item->id }}" data-item-price="{{ $item->price }}">Add to
+                    <button type="submit" data-item-id="{{ $item->id }}"
+                        data-item-price="{{ $item->price }}">Add to
                         Cart</button><br><br>
                 </form>
                 <div class='alert hide'></div><br>
@@ -109,60 +114,60 @@
         </div>
     </div>
     <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const quantityInput = document.getElementById('quantity');
-        const addItemButtons = document.querySelectorAll('button[type="submit"]');
-        const alertDiv = document.querySelector('.alert');
+        document.addEventListener('DOMContentLoaded', () => {
+            const quantityInput = document.getElementById('quantity');
+            const addItemButtons = document.querySelectorAll('button[type="submit"]');
+            const alertDiv = document.querySelector('.alert');
 
-        addItemButtons.forEach(addItemButton => {
-            addItemButton.addEventListener('click', (event) => {
-                event.preventDefault();
+            addItemButtons.forEach(addItemButton => {
+                addItemButton.addEventListener('click', (event) => {
+                    event.preventDefault();
 
-                const itemId = addItemButton.getAttribute('data-item-id');
-                const itemprice = addItemButton.getAttribute('data-item-price');
-                const quantity = quantityInput.value;
+                    const itemId = addItemButton.getAttribute('data-item-id');
+                    const itemprice = addItemButton.getAttribute('data-item-price');
+                    const quantity = quantityInput.value;
 
-                const formData = new FormData();
-                formData.append('itemId', itemId);
-                formData.append('quantity', quantity);
-                formData.append('itemprice', itemprice);
+                    const formData = new FormData();
+                    formData.append('itemId', itemId);
+                    formData.append('quantity', quantity);
+                    formData.append('itemprice', itemprice);
 
-                fetch('{{ url("/add-to-cart") }}', {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                            'X-CSRF-TOKEN': document.querySelector(
-                                'meta[name="csrf-token"]').getAttribute('content')
-                        },
-                        body: JSON.stringify({
-                            itemId: itemId,
-                            quantity: quantity,
-                            itemprice: itemprice
+                    fetch('{{ url('/add-to-cart') }}', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                                'X-CSRF-TOKEN': document.querySelector(
+                                    'meta[name="csrf-token"]').getAttribute('content')
+                            },
+                            body: JSON.stringify({
+                                itemId: itemId,
+                                quantity: quantity,
+                                itemprice: itemprice
+                            })
                         })
-                    })
-                    .then(response => {
-                        if (!response.ok) {
-                            throw new Error('Failed to add item to cart.');
-                        }
-                        return response.json();
-                    })
-                    .then(data => {
-                        alertDiv.textContent = data.message;
-                        alertDiv.classList.remove('hide');
-                        setTimeout(() => {
-                            alertDiv.classList.add('hide');
-                        }, 200); // 2 seconds
-                    })
-                    .catch(error => {
-                        alertDiv.textContent = 'Failed to add item to cart.';
-                        alertDiv.classList.remove('hide');
-                        setTimeout(() => {
-                            alertDiv.classList.add('hide');
-                        }, 200); // 2 seconds
-                    });
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error('Failed to add item to cart.');
+                            }
+                            return response.json();
+                        })
+                        .then(data => {
+                            alertDiv.textContent = data.message;
+                            alertDiv.classList.remove('hide');
+                            setTimeout(() => {
+                                alertDiv.classList.add('hide');
+                            }, 2000); // 2 seconds
+                        })
+                        .catch(error => {
+                            alertDiv.textContent = 'Failed to add item to cart.';
+                            alertDiv.classList.remove('hide');
+                            setTimeout(() => {
+                                alertDiv.classList.add('hide');
+                            }, 2000); // 2 seconds
+                        });
+                });
             });
         });
-    });
     </script>
 
     </script>

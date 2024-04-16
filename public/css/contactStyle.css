@@ -174,3 +174,18 @@ h3.talk {
 .alert-box button:hover {
   background-color: rgb(3, 202, 3);
 }
+
+#create {
+  border: 1px solid green;
+  border-radius: 10px;
+  background-color: rgb(46, 168, 46);
+  font-weight: bold;
+  padding: 6px;
+  margin: 4px;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+#create:hover {
+  background-color: red;
+}

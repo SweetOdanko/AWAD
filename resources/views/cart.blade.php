@@ -20,57 +20,61 @@
             <h3>Order Summary</h3>
         </div>
         <div class="middle_card">
-            @foreach($cartItems as $cartItem)
-            <div class='item_box'>
-                <ul>
-                    <li class='item_pic'><img src='{{ $cartItem->image_path }}'/></li>
-                    <li class='item_desc'>
-                        {{ $cartItem->title }}<br />
-                        RM{{ $cartItem->total / $cartItem->quantity }} Per Piece
-                    </li>
-                    <li class='item_quan_price'>
-                        <div class='quantity'>
-                            <!-- Decrement button -->
-                            @if($cartItem->quantity == 1)
-                                <form method="POST" action="{{ route('cart.delete') }}">
+            @foreach ($cartItems as $cartItem)
+                <div class='item_box'>
+                    <ul>
+                        <li class='item_pic'><img src='{{ $cartItem->image_path }}' /></li>
+                        <li class='item_desc'>
+                            {{ $cartItem->title }}<br />
+                            RM{{ $cartItem->total / $cartItem->quantity }} Per Piece
+                        </li>
+                        <li class='item_quan_price'>
+                            <div class='quantity'>
+                                <!-- Decrement button -->
+                                @if ($cartItem->quantity == 1)
+                                    <form method="POST" action="{{ route('cart.delete') }}">
+                                        @csrf
+                                        @method('DELETE')
+                                        <input type="hidden" name="userId" value="{{ Auth::id() }}">
+                                        <input type="hidden" name="Id" value="{{ $cartItem->id }}">
+                                        <button type="submit" class="delete" id="{{ $cartItem->id }}"
+                                            style="width: 25px; height: 25px; border-radius: 40%; background-color: #00a424; color: white; font-size: 15px;">-</button>
+                                    </form>
+                                @else
+                                    <form method="POST" action="{{ route('cart.decrement') }}">
+                                        @csrf
+                                        @method('PUT')
+                                        <input type="hidden" name="userId" value="{{ Auth::id() }}">
+                                        <input type="hidden" name="Id" value="{{ $cartItem->id }}">
+                                        <button type="submit" class="minus" id="{{ $cartItem->id }}"
+                                            style="width: 25px; height: 25px; border-radius: 40%;  background-color: #00a424; color: white; font-size: 15px;">-</button>
+                                    </form>
+                                @endif
+                                <span class="num">{{ $cartItem->quantity }}</span> <!-- Show quantity here -->
+                                <!-- Increment button -->
+                                <form method="POST" action="{{ route('cart.increment') }}">
                                     @csrf
-                                    @method('DELETE')
-                                    <input type="hidden" name="userId" value="{{ Auth::id()}}">
+                                    @method('PUT')
+                                    <input type="hidden" name="userId" value="{{ Auth::id() }}">
                                     <input type="hidden" name="Id" value="{{ $cartItem->id }}">
-                                    <button type="submit" class="delete" id="{{ $cartItem->id }}" style="width: 25px; height: 25px; border-radius: 40%; background-color: #00a424; color: white; font-size: 15px;">-</button>
+                                    <button type="submit" class="plus" id="{{ $cartItem->id }}"
+                                        style="width: 25px; height: 25px; border-radius: 40%;  background-color: #00a424; color: white; font-size: 15px;">+</button>
                                 </form>
-                            @else
-                            <form method="POST" action="{{ route('cart.decrement') }}">
-                                @csrf
-                                @method('PUT')
-                                <input type="hidden" name="userId" value="{{ Auth::id()}}">
-                                <input type="hidden" name="Id" value="{{ $cartItem->id }}">
-                                <button type="submit" class="minus" id="{{ $cartItem->id }}" style="width: 25px; height: 25px; border-radius: 40%;  background-color: #00a424; color: white; font-size: 15px;">-</button>
-                            </form>
-                            @endif
-                            <span class="num">{{ $cartItem->quantity }}</span> <!-- Show quantity here -->
-                            <!-- Increment button -->
-                            <form method="POST" action="{{ route('cart.increment') }}">
-                                @csrf
-                                @method('PUT')
-                                <input type="hidden" name="userId" value="{{ Auth::id()}}">
-                                <input type="hidden" name="Id" value="{{ $cartItem->id }}">
-                                <button type="submit" class="plus" id="{{ $cartItem->id }}" style="width: 25px; height: 25px; border-radius: 40%;  background-color: #00a424; color: white; font-size: 15px;">+</button>
-                            </form>
-                        </div>
-                        
-                        <span class='price'>RM{{ $cartItem->total }}</span>
-                    </li>
-                </ul>
-                <div class='line'></div>
-            </div>
+                            </div>
+
+                            <span class='price'>RM{{ $cartItem->total }}</span>
+                        </li>
+                    </ul>
+                    <div class='line'></div>
+                </div>
             @endforeach
         </div>
         <div class='alert hide'></div><br>
         <div class="bottom_card">
             <div class="total">
                 <div style="text-align: center;">
-                    <a href="{{ route('checkout-show') }}" class="login_bttn" style="background-color: #4CAF50; color: white; padding: 15px 12px; border: none; border-radius: 20px; cursor: pointer; text-align: center; text-decoration: none; display: inline-block; font-size: 20px; margin: 4px 2px; width: 250px;">Proceed</a>
+                    <a href="{{ route('checkout-show') }}" class="login_bttn"
+                        style="background-color: #4CAF50; color: white; padding: 15px 12px; border: none; border-radius: 20px; cursor: pointer; text-align: center; text-decoration: none; display: inline-block; font-size: 20px; margin: 4px 2px; width: 250px;">Proceed</a>
                 </div>
                 <div style="clear: both;"></div>
                 <div style="float: left;">
@@ -84,7 +88,7 @@
                 <div style="clear: both;"></div>
             </div>
         </div>
-        
+
     </div>
 
     <script src="{{ asset('js/cart.js') }}"></script>

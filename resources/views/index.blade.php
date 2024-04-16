@@ -26,8 +26,9 @@
 
 
         @if (Auth::check())
-        <a href="/logout">Logout </a>
-        @else <a class="btn btn-link" href="/login">Login now</a>
+            <a id="hero-a" href="/logout">Logout</a>
+        @else
+            <a id="hero-a" href="/login">Login now</a>
         @endif
 
 

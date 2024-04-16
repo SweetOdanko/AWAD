@@ -26,3 +26,18 @@ a {
 a:hover {
     color: #555;
 }
+/* update and delete button style */
+#btn {
+    border: 1px solid green;
+    border-radius: 10px;
+    background-color: rgb(46, 168, 46);
+    font-weight: bold;
+    padding: 6px;
+    margin: 4px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+#btn:hover {
+    background-color: red;
+}

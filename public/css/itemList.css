@@ -74,6 +74,21 @@ body {
   width: 130px;
   height: 30px;
 }
+/* create, update, delete button */
+#create {
+  border: 1px solid green;
+  border-radius: 10px;
+  background-color: rgb(46, 168, 46);
+  font-weight: bold;
+  padding: 6px;
+  margin: 4px;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+#create:hover {
+  background-color: red;
+}
 /* //////////////////////////////////////////// */
 .header1 {
   text-align: center;
